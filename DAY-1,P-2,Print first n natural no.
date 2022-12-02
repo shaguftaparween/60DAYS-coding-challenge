@@ -1,0 +1,19 @@
+Q...Print first n natural no.
+#include <stdio.h>
+#include<conio.h>
+void natural(int n);
+int main()
+{
+    int n;
+    printf("enter a number");
+    scanf("%d",&n);
+    natural(n);
+    getch();
+    return 0;
+}
+void natural(int n)
+{
+    int i;
+    for(i=1;i<=n;i++)
+    printf("%d\n",i);
+}
