@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+int even(int a);//function declaration
+int main()
+{
+    int a,e;
+    printf("enter a number");
+    scanf("%d",&a);
+    if(even(a))//function call
+    {
+    printf("even");
+    }
+    else
+    {
+    printf("odd");
+    }
+    getch();
+    return 0;
+}
+int even(int a)//function definition
+{
+    
+// return a%2==0; 
+if(a%2==0)
+return 1;
+else
+return 0;
+}
+   
