@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <conio.h>
+int combination(int n,int r);
+int main()
+{
+    int n,r,c;
+    printf("enter a number n and selected item r");
+    scanf("%d%d",&n,&r);
+    c=combination(n,r);
+    printf(" no of combination is %d",c);
+    getch();
+    return 0;
+}
+int combination(int n,int r)
+{
+    int i,x=1,y=1,z=1,c;
+    for(i=1;i<=n;i++)
+    {
+     x=x*i;   
+    }
+    for(i=1;i<=r;i++)
+    {
+        y=y*i;
+    }
+    for(i=1;i<=n-r;i++)
+    {
+    z=z*i;
+    }
+    c=x/(y*z);
+    return c;
+}
