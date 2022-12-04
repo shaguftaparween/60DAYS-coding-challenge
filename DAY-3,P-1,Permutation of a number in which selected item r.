@@ -7,7 +7,7 @@ int main()
     printf("enter a number n and selected item r");
     scanf("%d%d",&n,&r);
     p=permutation(n,r);
-    printf("permutation is %d",p);
+    printf(" no of permutation is %d",p);
     getch();
     return 0;
 }
