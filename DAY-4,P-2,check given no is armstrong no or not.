@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include<conio.h>
+int arm(int x);
+int main()
+{
+    int x;
+    printf("enter a number");
+    scanf("%d",&x);
+    if(arm(x))
+    printf("%d is a armstrong number",x);
+    else
+    printf("%d is not a armstrong number",x);
+    
+    getch();
+    return 0;
+}
+int arm(int x)
+{
+    int z=0,y,t=x;
+    
+    while(x > 0)
+    {
+        y=x%10;
+        z=z+y*y*y;
+        x=x/10;
+    }
+    if(z==t)
+        return 1;
+    else
+        return 0;
+}
