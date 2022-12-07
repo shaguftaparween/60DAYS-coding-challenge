@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include<conio.h>
+int sumd(int n);
+int main()
+{
+    int n,s;
+    printf("enter a number");
+    scanf("%d",&n);
+    s=sumd(n);
+    printf(" sum of digits is %d",s);
+    getch();
+    return 0;
+}
+int sumd(int n)
+{
+    int s=0,m;
+    while(n)
+    {
+    m=n%10;
+    s=s+m;
+    n=n/10;
+    }
+    return s;
+}
+    
+
+    
