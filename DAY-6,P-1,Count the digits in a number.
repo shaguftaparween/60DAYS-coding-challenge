@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include<conio.h>
+int count(int n);
+int main()
+{
+    int n,c;
+    printf("enter a number");
+    scanf("%d",&n);
+    c=count(n);
+    printf(" no of digits is %d",c);
+    getch();
+    return 0;
+}
+int count(int n)
+{
+    int c=0;
+    while(n)
+    {
+    n=n/10;
+    c++;
+    }
+    return c++;
+}
+    
+
+    
