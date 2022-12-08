@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <conio.h>
+void reverse();
+int main()
+{
+    reverse();
+    getch();
+    return 0;
+}
+void reverse()
+{
+    int i=1,n,m;
+    printf("enter a number");
+    scanf("%d",&n);
+    while(n>0)
+    {
+    m=n%10;
+    printf("%d",m);
+    n=n/10;
+    }
+    
+}
