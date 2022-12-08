@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <conio.h>
+void evensum();
+int main()
+{
+    evensum();
+    getch();
+    return 0;
+}
+void evensum()
+{
+    int i=1,n,s=0;
+    printf("enter a number");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+    if(i%2==0)
+    s=s+i;
+    }
+    printf("sum of even natural no is %d",s);
+}
