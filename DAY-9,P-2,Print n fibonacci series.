@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <conio.h>
+void fibonacci();
+int main()
+{
+    fibonacci();
+    getch();
+    return 0;
+}
+void fibonacci()
+{
+    int i=1,a=0,b=1,f,n;
+    printf("enter a number");
+    scanf("%d",&n);
+    while(i<=n)
+    {
+    f=a+b;
+    printf("%d\n",f);
+    a=b;
+    b=f;
+    i++;
+    }
+    }
