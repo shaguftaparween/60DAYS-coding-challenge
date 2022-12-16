@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include<conio.h>
+int greater(int a,int b,int c);
+int main()
+{
+    int a,b,c,g;
+    printf("enter coefficients a,b,c");
+    scanf("%d%d%d",&a,&b,&c);
+    g=greater(a,b,c);
+    if(greater(a,b,c))
+    printf("%d is greater among these",g);
+    else
+    printf("nature of roots are imaginary");
+    getch();
+    return 0;
+}
+int greater(int a,int b,int c)
+{
+    if(a>b&&a>c)
+    return a;
+    else
+    if(b>c)
+    return b;
+    else
+    return c;
+}
