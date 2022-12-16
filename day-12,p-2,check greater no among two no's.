@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include<conio.h>
+int greater(int a,int b);
+int main()
+{
+    int a,b,g;
+    printf("enter two numbers");
+    scanf("%d%d",&a,&b);
+    g=greater(a,b);
+    if(greater(a,b))
+    printf("%d is greater among these",g);
+    else
+    printf("nature of roots are imaginary");
+    getch();
+    return 0;
+}
+int greater(int a,int b)
+{
+    if(a>b)
+    return a;
+    else
+    return b;
+}
