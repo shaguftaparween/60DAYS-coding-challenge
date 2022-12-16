@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include<conio.h>
+int roots(int a,int b,int c);
+int main()
+{
+    int a,b,c;
+    printf("enter coefficients a,b,c");
+    scanf("%d%d%d",&a,&b,&c);
+    roots(a,b,c);
+    if(roots(a,b,c))
+    printf("nature of roots are real");
+    else
+    printf("nature of roots are imaginary");
+    getch();
+    return 0;
+}
+int roots(int a,int b,int c)
+{
+    int d;
+    d=b*b-4*a*c;
+    if(d>0)
+    return 1;
+    else
+    return 0;
+}
