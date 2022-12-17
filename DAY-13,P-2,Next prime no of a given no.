@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include<conio.h>
+int main()
+{
+    int a,i,j;
+    printf("enter a numbers");
+    scanf("%d",&a);
+    for(i=a+1;;i++)
+    {
+    for(j=2;j<=i-1;j++)
+    if(i%j==0)
+    {
+    break;
+    }
+    if(i==j)
+    {
+    printf("%d",i);
+    break;
+    }
+    }
+    getch();
+    return 0;
+}
