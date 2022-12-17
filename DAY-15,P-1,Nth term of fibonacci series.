@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include<conio.h>
+void nthfibo(int n);
+int main()
+{
+    int n;
+    printf("enter nth term");
+    scanf("%d",&n);
+    nthfibo(n);
+    getch();
+    return 0;
+}
+void nthfibo(int n)
+{
+    int f1=0,f2=1,i,fn;
+    for(i=3;i<=n;i++)
+    {
+    fn=f1+f2;
+    f1=f2;
+    f2=fn;
+    }
+    printf(" %dth term is %d\n",n,fn);
+}
+
