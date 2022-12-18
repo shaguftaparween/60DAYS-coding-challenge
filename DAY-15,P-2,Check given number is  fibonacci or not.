@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include<conio.h>
+int main()
+{
+    int a=0,b=1,n,next;
+    printf("enter a number");
+    scanf("%d",&n);
+    if(n==a||n==b)
+    {
+    printf("fibonacci");
+    }
+    else
+    {
+    next=a+b;
+    while(next<n)
+    {
+    next=a+b;
+    a=b;
+    b=next;
+    }
+    if(n==next)
+    printf("fibonacci");
+    else
+    printf("not fibonacci");
+    }
+    return 0;
+}
