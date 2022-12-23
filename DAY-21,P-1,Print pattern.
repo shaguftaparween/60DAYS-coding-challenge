@@ -1,0 +1,30 @@
+Q...Print this pattern.
+ABCDCBA
+ABC CBA
+AB   BA
+A     A
+
+
+#include <stdio.h>
+#include<conio.h>
+int main()
+{
+    int i,j,x;
+    for(i=1;i<=4;i++)
+    {
+        x=65;
+        for(j=1;j<=7;j++)
+        {
+            if(j<=5-i||j>=3+i)
+            printf("%c",x);
+            else
+            printf(" ");
+            if(j>=4)
+            x--;
+            else
+            x++;
+        }
+        printf("\n");
+    }
+ return 0;
+}
