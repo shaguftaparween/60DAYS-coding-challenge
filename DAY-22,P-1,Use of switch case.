@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+int main()
+{
+    int x,a,b,c;
+    while(x!=4)
+    {
+    printf("1.check given set of three numbers are length of isosceles traingle or not\n");
+    printf("2.check given set of three numbers are length of sides of right angled traingle or not\n");
+    printf("3.check given set of three numbers are length of sides of equiletral traingle or not\n");
+    printf("enter a number");
+    scanf("%d",&x);
+    switch(x)
+    {
+        case 1:
+        printf("enter three sides of a traingle");
+        scanf("%d%d%d",&a,&b,&c);
+        if(a==b||b==c||c==a)
+        printf(" these are side of isosceles traingle\n");
+        else
+        printf("not\n");
+        break;
+        case 2:
+        printf("enter three sides of a traingle");
+        scanf("%d%d%d",&a,&b,&c);
+        if(c*c==a*a+b*b||a*a==b*b+c*c||b*b==a*a+c*c)
+        printf("these are sides of right angled traingle\n");
+        else
+        printf("not\n");
+        break;
+        case 3:
+        printf("enter three sides of a traingle");
+        scanf("%d%d%d",&a,&b,&c);
+        if(a==b==c)
+        printf("these are sides of equilateral traingle\n");
+        else
+        printf("not\n");
+        break;
+        case 4:
+        printf("end program");
+        break;
+        default:
+        printf("invalid choice\n");
+    }
+        
+    }
+        return 0;
+    
+}
