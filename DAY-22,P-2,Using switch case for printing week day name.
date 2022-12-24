@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+int main()
+{
+    int x;
+    while(x!=8)
+    {
+    printf("enter number of day in week ");
+    scanf("%d",&x);
+    switch(x)
+    {
+        case 1:
+        printf("monday\n");
+        break;
+        case 2:
+        printf("tuesday\n");
+        break;
+        case 3:
+        printf("weadnesday\n");
+        break;
+        case 4:
+        printf("thursday\n");
+        break;
+        case 5:
+        printf("friday\n");
+        case 6:
+        printf("saturday\n");
+        case 7:
+        printf("sunday\n");
+        break;
+        case 8:
+        printf("end program\n");
+        break;
+        default:
+        printf("invalid choice\n");
+    }
+        
+    }
+        return 0;
+    
+}
