@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include<conio.h>
+int natural(int n);
+int main()
+{
+    int n;
+    printf("enter a number");
+    scanf("%d",&n);
+    n=2*n;
+    natural(n);
+    getch();
+    return 0;
+}
+int natural(int n)
+ {
+    if(n<1)
+    return 1;
+    natural(n-1);
+    if(n%2==0)
+    printf("\n%d",n);
+ }
