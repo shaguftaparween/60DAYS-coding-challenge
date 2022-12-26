@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include<conio.h>
+int sumnatural(int n);
+int main()
+{
+    int k,s;
+    printf("enter a number");
+    scanf("%d",&k);
+    s=sumnatural(k);
+    printf("sum of %d natural no is %d",k,s);
+}
+int sumnatural(int n)
+{
+    int s;
+    if(n==0)
+    return 0;
+    if(n>0)
+    s=n+sumnatural(n-1);
+    return s;
+    
+}
