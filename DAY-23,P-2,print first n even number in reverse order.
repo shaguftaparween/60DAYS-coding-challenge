@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include<conio.h>
+int reveven(int n);
+int main()
+{
+    int n;
+    printf("enter a number");
+    scanf("%d",&n);
+    n=2*n;
+    reveven(n);
+    getch();
+    return 0;
+}
+int reveven(int n)
+ {
+    if(n<1)
+    return 1;
+    if(n%2==0)
+    printf("\n%d",n);
+    reveven(n-1);
+ }
