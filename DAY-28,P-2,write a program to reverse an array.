@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include<conio.h>
+int main()
+{
+    int i,n,x;
+    int a[x];
+    printf("enter the size of an array");
+    scanf("%d",&n);
+    printf("enter an array");
+    for(i=0;i<n;i++)
+    
+    scanf("%d",&a[i]);
+    
+    printf("reverse array are:");
+    for(i=n-1;i>=0;i--)
+    
+    printf("%d\n",a[i]);
+    
+    getch();
+    return 0;
+}
